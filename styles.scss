@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+
+.container{
+    margin : 0px;
+    overflow: hidden;
+}
+
+a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    pointer-events: all;
+}
+
+.menu-container {
+    background-color: rgb(39, 152, 186);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    pointer-events: all;
+    z-index: 99999;
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 16px 24px;
+
+        li {
+            margin-right: 20px;
+            
+
+            a {
+               color: white;
+               text-decoration: none;
+               opacity: 0.9;
+            }
+        }
+
+        .active {
+            font-weight: 600;
+            opacity: 1;
+        }
+    }
+}
+
+.demo-button{
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    position: absolute;
+    pointer-events: all;
+    z-index: 99999;    bottom: 0;
+    right: 0;
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin:  0 8px 8px 0;
+
+    a{
+        pointer-events: all;
+        cursor: pointer;
+    }
+
+}
